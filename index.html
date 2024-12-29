@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Burey - PhD Candidate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            background-color: #f8fafc; 
+        }
+        .hero-image { 
+            background-color: rgba(255, 255, 255, 0.9); 
+        }
+        .profile-container {
+            background: white;
+            padding: 4px;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .content-card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+        .blue-gradient {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Hero Section -->
+    <header class="relative">
+        <div class="absolute inset-0 overflow-hidden h-[500px]">
+            <img src="branches.jpg" alt="Branches over water at sunset" class="w-full h-full object-cover opacity-20">
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+            <div class="flex flex-col items-center text-center">
+                <img src="profile.png" alt="Joseph Burey" class="w-48 h-48 rounded-full shadow-lg mb-8 object-cover bg-white">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Joseph Burey</h1>
+                <p class="text-xl text-gray-600 mb-6">PhD Candidate</p>
+                <p class="text-lg text-gray-600">University of Minnesota</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <!-- About Section -->
+            <div class="lg:col-span-2 space-y-6">
+                <section class="content-card p-8">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Welcome</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Representation matters, but what type? I study students' psychological responses to self-relevant racial identity representations. My current work focuses on how textual representations with critical contexts influence Black students' understandings and attributions of systemic racism.
+                    </p>
+                </section>
+
+                <section class="content-card p-8">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-medium text-gray-900">PhD in Educational Psychology</h3>
+                            <p class="text-gray-600">Psychological Foundations of Education</p>
+                            <p class="text-gray-500">University of Minnesota, 2023-present</p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <h3 class="font-medium text-gray-900">MA in Educational Psychology</h3>
+                            <p class="text-gray-600">Psychological Foundations of Education</p>
+                            <p class="text-gray-500">University of Minnesota, 2021-2023</p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <h3 class="font-medium text-gray-900">BSc (Honours) in Behaviour, Cognition, & Neuroscience</h3>
+                            <p class="text-gray-500">University of Windsor, 2015-2019</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-6">
+                <section class="content-card p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Contact</h2>
+                    <div class="space-y-4">
+                        <p class="text-gray-600">
+                            <span class="font-medium block">Email:</span>
+                            <span class="text-gray-600">
+                                burey001@umn.edu
+                            </span>
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium block">Phone:</span>
+                            651-900-1913
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium block">Bluesky:</span>
+                            <a href="https://bsky.app/profile/josephburey.bsky.social" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
+                                @josephburey.bsky.social
+                            </a>
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium block">Office:</span>
+                            Education Sciences Building 275D<br>
+                            56 E River Rd<br>
+                            Minneapolis, MN 55455<br>
+                            United States
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">CV</h2>
+                    <a
+                        href="burey_cv.pdf" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200"
+                    >
+                        Download CV
+                    </a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <p class="text-center text-gray-500">
+                © 2024 Joseph Burey. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
