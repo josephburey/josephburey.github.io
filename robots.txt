@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Disallow: /burey_cv.pdf
