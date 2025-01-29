@@ -90,13 +90,22 @@
         overflow: hidden;
         border-radius: 9999px;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        position: relative;
+    }
+    .profile-container::after {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        border-radius: 9999px;
+        backdrop-filter: blur(0.3px);
+        -webkit-backdrop-filter: blur(0.3px);
+        pointer-events: none;
     }
     .profile-img {
-        width: 194px;  /* Slightly larger */
-        height: 194px; /* Slightly larger */
+        width: 192px;
+        height: 192px;
         object-fit: cover;
-        border-radius: 95%;  /* Slightly smaller percentage than container */
-        margin: -1px;  /* Compensate for the extra size */
+        border-radius: 9999px;
     }
         .content-card {
             background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
