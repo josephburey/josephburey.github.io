@@ -90,22 +90,14 @@
         overflow: hidden;
         border-radius: 9999px;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-        position: relative;
-    }
-    .profile-container::after {
-        content: '';
-        position: absolute;
-        inset: -1px;
-        border-radius: 9999px;
-        backdrop-filter: blur(0.3px);
-        -webkit-backdrop-filter: blur(0.3px);
-        pointer-events: none;
     }
     .profile-img {
-        width: 192px;
-        height: 192px;
+        width: 196px;
+        height: 196px;
         object-fit: cover;
         border-radius: 9999px;
+        margin: -2px;
+        filter: contrast(1.1) blur(0.7px);
     }
         .content-card {
             background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
