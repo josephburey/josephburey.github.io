@@ -91,16 +91,14 @@
         border-radius: 9999px;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
         position: relative;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 2px;
     }
     .profile-img {
         width: 192px;
         height: 192px;
         object-fit: cover;
         border-radius: 9999px;
-        filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        -webkit-mask-image: radial-gradient(circle at center, black 96%, transparent 98%);
+        mask-image: radial-gradient(circle at center, black 96%, transparent 98%);
     }
         .content-card {
             background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
