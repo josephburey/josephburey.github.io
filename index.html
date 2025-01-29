@@ -92,11 +92,13 @@
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     }
     .profile-img {
-        width: 192px;
-        height: 192px;
+        width: 196px;  /* Slightly larger than container */
+        height: 196px; /* Slightly larger than container */
         object-fit: cover;
         border-radius: 9999px;
-        filter: blur(0.4px);
+        filter: blur(0.7px);
+        transform: scale(1.02);  /* Scale up slightly */
+        opacity: 0.97;  /* Very slightly transparent */
     }
         .content-card {
             background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
