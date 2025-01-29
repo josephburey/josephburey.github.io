@@ -90,15 +90,13 @@
         overflow: hidden;
         border-radius: 9999px;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-        position: relative;
     }
     .profile-img {
         width: 192px;
         height: 192px;
         object-fit: cover;
         border-radius: 9999px;
-        -webkit-mask-image: radial-gradient(circle at center, black 96%, transparent 98%);
-        mask-image: radial-gradient(circle at center, black 96%, transparent 98%);
+        filter: blur(0.4px);
     }
         .content-card {
             background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
