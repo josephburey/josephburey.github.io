@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Burey</title>
+    <meta name="description" content="Educational Psychology PhD Candidate at the University of Minnesota">
+    
+    <!-- Favicons for all platforms -->
+    <link rel="icon" type="image/png" href="https://josephburey.org/profile.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://josephburey.org/profile.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://josephburey.org/profile.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://josephburey.org/profile.png">
+    <link rel="shortcut icon" href="https://josephburey.org/profile.png">
+    
+    <!-- Core SEO tags -->
+    <meta name="author" content="Joseph Burey">
+    <meta name="keywords" content="Joseph Burey, Educational Psychology, University of Minnesota, PhD Candidate, Educational Research, Racial Identity Representation">
+    <link rel="canonical" href="https://josephburey.org">
+    
+    <!-- Social sharing -->
+    <meta property="og:title" content="Joseph Burey">
+    <meta property="og:description" content="Educational Psychology PhD Candidate at the University of Minnesota">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://josephburey.org">
+    <meta property="og:image" content="https://josephburey.org/profile.png">
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="192">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Joseph Burey">
+    <meta name="twitter:description" content="Educational Psychology PhD Candidate at the University of Minnesota">
+    <meta name="twitter:image" content="https://josephburey.org/profile.png">
+    
+    <!-- Web Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#f0f9ff">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Joseph Burey",
+      "jobTitle": "PhD Candidate",
+      "affiliation": "University of Minnesota",
+      "url": "https://josephburey.org",
+      "image": "https://josephburey.org/profile.png",
+      "logo": "https://josephburey.org/profile.png",
+      "email": "burey001@umn.edu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "56 E River Rd",
+        "addressLocality": "Minneapolis",
+        "addressRegion": "MN",
+        "postalCode": "55455",
+        "addressCountry": "United States"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Minnesota"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Windsor"
+        }
+      ],
+      "description": "Educational Psychology researcher studying racial identity representations in education"
+    }
+    </script>
+
+    <!-- Performance optimizations -->
+    <link rel="preload" as="image" href="profile.png" fetchpriority="high">
+    <link rel="preload" as="image" href="branches.JPG" fetchpriority="high">
+    
+    <!-- Google Fonts - EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            background-color: #f0f9ff; 
+            font-family: 'EB Garamond', serif;
+            font-size: 1.15rem;
+            color: #000000;
+        }
+        .profile-container {
+            width: 192px;
+            height: 192px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 9999px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        .profile-img {
+            width: 192px;
+            height: 192px;
+            object-fit: cover;
+            border-radius: 9999px;
+        }
+        .content-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px -1px rgba(186, 230, 253, 0.15), 0 2px 4px -1px rgba(186, 230, 253, 0.1);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .hero-container {
+            position: relative;
+        }
+        .hero-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 0%, rgba(240, 249, 255, 0.001) 10%, rgba(240, 249, 255, 0.002) 15%, rgba(240, 249, 255, 0.005) 20%, rgba(240, 249, 255, 0.01) 25%, rgba(240, 249, 255, 0.02) 30%, rgba(240, 249, 255, 0.04) 35%, rgba(240, 249, 255, 0.07) 40%, rgba(240, 249, 255, 0.12) 45%, rgba(240, 249, 255, 0.18) 50%, rgba(240, 249, 255, 0.25) 55%, rgba(240, 249, 255, 0.35) 60%, rgba(240, 249, 255, 0.5) 70%, rgba(240, 249, 255, 0.7) 80%, rgba(240, 249, 255, 0.85) 90%, rgba(240, 249, 255, 0.95) 100%);
+            pointer-events: none;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: 100%;
+        }
+        .contact-section {
+            height: 100%;
+            flex-grow: 1;
+        }
+        @media (min-width: 1024px) {
+            .sidebar {
+                height: 100%;
+            }
+            .contact-section {
+                flex: 1;
+            }
+        }
+        .header-content-fade {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .bluesky-link {
+            transition: color 0.3s ease;
+        }
+        .bluesky-link:hover {
+            color: #3b82f6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .content-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        .content-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .content-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        .content-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Hero Section -->
+    <header class="relative">
+        <div class="absolute inset-0 overflow-hidden h-[500px] hero-container">
+            <img src="branches.JPG" 
+                 alt="Branches over water at sunset" 
+                 class="w-full h-full object-cover opacity-25" 
+                 fetchpriority="high"
+                 width="1200"
+                 height="800"
+                 loading="eager">
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+            <div class="flex flex-col items-center text-center">
+                <div itemscope itemtype="http://schema.org/Person" class="flex flex-col items-center">
+                    <div class="profile-container mb-8">
+                        <img src="profile.png" 
+                             alt="Joseph Burey" 
+                             class="profile-img"
+                             width="192" 
+                             height="192" 
+                             fetchpriority="high"
+                             loading="eager"
+                             itemprop="image">
+                    </div>
+                    <div class="header-content-fade">
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4" itemprop="name">Joseph Burey</h1>
+                        <p class="text-xl text-gray-600 mb-6" itemprop="jobTitle">PhD Candidate</p>
+                        <p class="text-xl text-gray-600" itemprop="affiliation">University of Minnesota</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 h-full">
+            <!-- Left Side - Text Heavy Content -->
+            <div class="lg:col-span-2 space-y-6">
+                <section class="content-card p-8">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Research</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Representation matters, but what type? I study students' psychological responses to self-relevant racial identity representations. My current work focuses on how textual representations with critical contexts influence Black students' understandings and attributions of systemic racism.
+                    </p>
+                </section>
+
+                <section class="content-card p-8">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Teaching</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        My teaching is grounded in cultivating critical thinking and an appetite for discovery. I empower students to challenge dominant narratives by engaging critically with historical and societal issues. Ultimately, I seek to develop in students a mode of thinking that inspires them to discover on their own, with both intellectual rigor and compassionate discernment. As Booker T. Washington put it, "The highly educated person is gentle and sympathetic to everyone." To me, this is the kind of education that serves students after their coursework concludes.
+                    </p>
+                </section>
+
+                <section class="content-card p-8">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Bio</h2>
+                    <div class="space-y-6">
+                        <p class="text-gray-600 leading-relaxed">
+                            Joseph Burey is a PhD candidate in Educational Psychology at the University of Minnesota. His current research examines how representations with critical contexts influence Black students' understandings of systemic racism. His work has appeared in scholarly outlets such as <em>Contemporary Educational Psychology</em> and <em>Teachers College Record</em>, and has been presented at national conferences of the American Educational Research Association and the American Psychological Association. He has taught undergraduate courses in the fields of Education and Psychology. Joseph is from Windsor, Canada and currently resides in Minneapolis.
+                        </p>
+                        <div class="pt-4 border-t border-gray-100">
+                            <p class="text-gray-600 leading-relaxed">
+                                "List of Faves"
+                            </p>
+                            <p class="text-gray-600 leading-relaxed">
+                                Quote: "You have seen how a man was made a slave; you shall see how a slave was made a man." — Frederick Douglass • Book: <em>Message to the People</em> by Marcus Garvey • Music: Hip Hop • Movie: <em>Cool Runnings</em> • Show: <em>Breaking Bad</em> • Athlete: LeBron James • Team: Toronto Maple Leafs • Cuisine: Jamaican
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Sidebar - Lighter Content -->
+            <div class="sidebar">
+                <section class="content-card p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Education</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-medium text-gray-900">PhD in Educational Psychology</h3>
+                            <p class="text-gray-500">Psychological Foundations of Education</p>
+                            <p class="text-gray-500">University of Minnesota, 2023-present</p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <h3 class="font-medium text-gray-900">MA in Educational Psychology</h3>
+                            <p class="text-gray-500">Psychological Foundations of Education</p>
+                            <p class="text-gray-500">University of Minnesota, 2021-2023</p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <h3 class="font-medium text-gray-900">BSc (Honours) in Behaviour, Cognition, & Neuroscience</h3>
+                            <p class="text-gray-500">University of Windsor, 2015-2019</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-card p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">CV</h2>
+                    <a
+                        href="burey_cv.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200"
+                    >
+                        Download CV
+                    </a>
+                </section>
+
+                <section class="content-card contact-section p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Connect</h2>
+                    <div class="space-y-4">
+                        <p class="text-black">
+                            <span class="font-medium block">Email:</span>
+                            <span id="email-display" class="text-gray-500"></span>
+                        </p>
+                        <script>
+                            // Simple email protection from bots
+                            const email = ['burey001', '@', 'umn.edu'].join('');
+                            document.getElementById('email-display').textContent = email;
+                        </script>
+                        <p class="text-black">
+                            <span class="font-medium block">Bluesky:</span>
+                            <a href="https://bsky.app/profile/josephburey.org" 
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="bluesky-link text-blue-600">
+                                @josephburey.org
+                            </a>
+                        </p>
+                        <p class="text-black">
+                            <span class="font-medium block">Google Scholar:</span>
+                            <a href="https://scholar.google.ca/citations?user=lJnHU08AAAAJ&hl=en&oi=ao" 
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="bluesky-link text-blue-600">
+                                Joseph Burey
+                            </a>
+                        </p>
+                        <p class="text-black">
+                            <span class="font-medium block">Office:</span>
+                            <span class="text-gray-500 block">
+                                Education Sciences Building 275D<br>
+                                56 E River Rd<br>
+                                Minneapolis, MN 55455<br>
+                                United States
+                            </span>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <p class="text-center text-gray-400">
+                © 2025 Joseph Burey. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
